@@ -8,7 +8,7 @@ const client = new Client(
     authStrategy: new LocalAuth({
       dataPath: '../auth'
     })
-  }
+},{ puppeteer: {args: ['--no-sandbox']},}
 );
 
 let count = db;
