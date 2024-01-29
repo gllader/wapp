@@ -56,7 +56,7 @@ client.on("message", async (message) => {
     await message.reply(
       new Poll("E o vintas hoje, rola?", ["Bora carudão", "Nem, vou de marmita"])
     );
-    else if (message.body === "!churras") {
+  } else if (message.body === "!churras") {
     await message.reply(
       new Poll("Vai ter churras?", ["Vai ter churras", "Não vai ter churras"])
     );
