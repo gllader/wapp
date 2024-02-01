@@ -60,6 +60,10 @@ client.on("message", async (message) => {
     await message.reply(
       new Poll("Vai ter churras?", ["Vai ter churras", "Não vai ter churras"])
     );
+  } else if (message.body === "!plr") {
+    await message.reply(
+      new Poll("Caiu o PLR?", ["Sim, to rico", "Não, to pobre"])
+    );
   } else if (message.body === "!groupinfo") {
     let chat = await message.getChat();
     if (chat.isGroup) {
